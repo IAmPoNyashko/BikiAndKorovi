@@ -89,4 +89,34 @@ int bulls_cows(int *a, int *b, int *c, int *d)
             printf("Enter the four-digit celery: = ");
         }
     }
+int bulls_func(int *a, int *b, int *c, int *d, int *fst, int *scnd, int *thrd, int *frth)
+{
+    int bulls = 0;
 
+    if (*fst == *a)
+        bulls++;
+    if (*scnd == *b)
+        bulls++;
+    if (*thrd == *c)
+        bulls++;
+    if (*frth == *d)
+        bulls++;
+
+    return bulls;
+}
+
+int cows_func(int *a, int *b, int *c, int *d, int *fst, int *scnd, int *thrd, int *frth)
+{
+    int cows = 0;
+
+    if (*fst == *b || *fst == *c || *fst == *d)
+        cows++;
+    if (*scnd == *a || *scnd == *c || *scnd == *d)
+        cows++;
+    if (*thrd == *b || *thrd == *a || *thrd == *d)
+        cows++;
+    if (*frth == *b || *frth == *c || *frth == *a)
+        cows++;
+
+    return cows;
+}
