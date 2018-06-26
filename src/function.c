@@ -57,7 +57,6 @@ void menu()
             _Exit (EXIT_SUCCESS);
             break;
     }
-    
 }
 
 int safe_input(char *str)
@@ -93,6 +92,7 @@ int safe_input(char *str)
         return 0;
       }
 	}
+	return 0;
 }
 
 int bcrandom(int *a, int *b, int *c, int *d)
