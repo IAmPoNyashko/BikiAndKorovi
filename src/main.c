@@ -6,6 +6,7 @@
 #include "function.c"
 
 int main()
-{   menu()
+{   menu();
 	return 0;
 }
+
